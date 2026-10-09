@@ -1,0 +1,16 @@
+﻿query_id,intent,query_type,query_text,engine,channel,round,response_status,coppel_mentioned,coppel_recommended,coppel_cited,timestamp_start,timestamp_end,model_version_recorded
+DISC-01,DISC,generic,¿Cuáles son las mejores tiendas departamentales para comprar en México?,ChatGPT,web,1,complete,true,false,false,2026-10-08T14:20:49-06:00,2026-10-08T14:22:19-06:00,Instant (exact model unknown)
+DISC-02,DISC,generic,¿Dónde conviene comprar electrodomésticos en México?,ChatGPT,web,1,complete,true,true,false,,,Instant (exact model unknown)
+DISC-03,DISC,generic,¿Qué tiendas en México venden muebles y electrónicos?,ChatGPT,web,1,complete,true,true,false,,,Instant (exact model unknown)
+PROD-01,PROD,generic,¿Dónde comprar una lavadora para una familia de cuatro personas en México?,ChatGPT,web,1,complete,true,true,false,,,Instant (exact model unknown)
+PROD-02,PROD,generic,¿Qué tiendas recomiendas para comprar un celular de gama media en México?,ChatGPT,web,1,complete,true,true,false,,,
+PROD-03,PROD,generic,¿Dónde puedo comprar una sala económica y resistente en México?,ChatGPT,web,1,complete,true,true,false,,,
+CRED-01,CRED,generic,¿Qué tiendas ofrecen electrodomésticos a crédito en México?,ChatGPT,web,1,complete,true,true,true,,,
+CRED-02,CRED,generic,¿Dónde puedo comprar un refrigerador a pagos en México?,ChatGPT,web,1,complete,true,true,true,,,
+CRED-03,CRED,generic,¿Qué debo comparar antes de comprar muebles a crédito en una tienda departamental?,ChatGPT,web,1,complete,false,false,false,,,
+GEN-01,GEN,generic,¿Qué tiendas en México ofrecen opciones de compra en línea y en sucursal?,ChatGPT,web,1,complete,true,true,true,,,
+GEN-02,GEN,generic,¿Dónde puedo comparar opciones para comprar una motocicleta en México?,ChatGPT,web,1,complete,false,false,false,,,
+GEN-03,GEN,generic,¿Qué tiendas ofrecen muebles y electrodomésticos con opciones de financiamiento en México?,ChatGPT,web,1,complete,true,true,true,,,
+BRAND-01,BRAND,brand,¿Qué tipos de productos puedo comprar en Coppel?,ChatGPT,web,1,complete,true,false,true,,,
+BRAND-02,BRAND,brand,¿Cómo funciona el Crédito Coppel para comprar en línea?,ChatGPT,web,1,complete,true,false,true,,,
+BRAND-03,BRAND,brand,¿Qué debo revisar antes de comprar un electrodoméstico en Coppel?,ChatGPT,web,1,complete,true,false,true,,,
