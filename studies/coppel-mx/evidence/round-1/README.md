@@ -1,58 +1,45 @@
-# Round 1 — Visual Evidence
+# Ronda 1 — Evidencia visual
 
-## Scope
+## Alcance
 
-This directory contains 107 screenshots supporting the first
-observation round of the Coppel México GEO Audit Lab.
+Este directorio contiene 107 capturas de pantalla que respaldan la primera ronda de observación del GEO Audit Lab de Coppel México.
 
-- Gemini: 59 screenshots covering 15 queries.
-- Perplexity: 48 screenshots covering 15 queries.
-- ChatGPT screenshots are not included in this delivery.
+- Gemini: 59 capturas correspondientes a 15 consultas.
+- Perplexity: 48 capturas correspondientes a 15 consultas.
+- Las capturas de ChatGPT no están incluidas en esta entrega.
 
-These screenshots document responses captured during the study.
-They do not represent additional observations.
+Estas capturas documentan las respuestas registradas durante el estudio. No constituyen observaciones adicionales.
 
-## Organization
+## Organización
 
-- `gemini/`: screenshots captured from Gemini.
-- `perplexity/`: screenshots captured from Perplexity.
-- `EVIDENCE-INDEX.csv`: file-level index with engine, round,
-  query identifier, sequence, repository path and SHA-256 hash.
+- `gemini/`: capturas obtenidas de Gemini.
+- `perplexity/`: capturas obtenidas de Perplexity.
+- `EVIDENCE-INDEX.csv`: índice de archivos con motor, ronda, identificador de consulta, secuencia, ruta dentro del repositorio y hash SHA-256.
 
-## Traceability
+## Trazabilidad
 
-Each screenshot is associated with an observation through its
-query identifier and the screenshot references in the original
-normalized Round 1 dataset.
+Cada captura se vincula con una observación mediante su identificador de consulta y las referencias a capturas presentes en el dataset normalizado original de la Ronda 1.
 
-The SHA-256 values in `EVIDENCE-INDEX.csv` identify the exact
-published image files and allow subsequent integrity checks.
+Los valores SHA-256 de `EVIDENCE-INDEX.csv` identifican los archivos de imagen publicados y permiten realizar verificaciones posteriores de integridad.
 
-## Quality controls
+## Controles de calidad
 
-- All 107 source references were matched to existing files.
-- No duplicate or unreferenced screenshots were found.
-- All 107 repository copies matched their source SHA-256 hashes.
-- All 107 indexed files passed the final existence and hash checks.
-- The researcher manually reviewed the screenshots for readability
-  and visible personal information.
+- Se comprobó que las 107 referencias de origen correspondieran a archivos existentes.
+- No se encontraron capturas duplicadas ni capturas sin referencia.
+- Las 107 copias del repositorio coincidieron con los hashes SHA-256 de sus archivos de origen.
+- Los 107 archivos indexados superaron las verificaciones finales de existencia e integridad.
+- El investigador revisó manualmente la legibilidad de las capturas y la posible presencia de información personal visible.
 
-## Limitations
+## Limitaciones
 
-- Visual review was conducted by the researcher, not independently.
-- Screenshots are observational evidence, not proof of reproducibility.
-- The screenshots do not independently establish the correctness
-  of the manually coded GEO indicators.
-- Only Round 1 is represented; subsequent rounds remain pending.
-- The study is exploratory and does not support causal or
-  market-representative conclusions.
+- La revisión visual fue realizada por el investigador, sin validación independiente.
+- Las capturas constituyen evidencia observacional, no una demostración de reproducibilidad.
+- Las capturas no permiten establecer, por sí solas, la corrección de los indicadores GEO codificados manualmente.
+- Solo se incluye la Ronda 1; las rondas posteriores están pendientes.
+- El estudio es exploratorio y no permite establecer conclusiones causales ni representativas del mercado.
 
-## Evidence release
+## Publicación de evidencias
 
-This evidence package accompanies Delivery 02.1 of the
-Coppel México GEO Audit Lab.
+Este paquete de evidencias acompaña la Entrega 02.1 del GEO Audit Lab de Coppel México.
 
-The screenshots, evidence index and documentation are
-provided to support inspection and independent verification
-of the recorded files. They do not imply independent
-validation of the study's coding decisions.
+Las capturas, el índice de evidencias y la documentación se proporcionan para facilitar la inspección y la verificación independiente de los archivos registrados. Su publicación no implica una validación independiente de las decisiones de codificación del estudio.
