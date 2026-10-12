@@ -22,3 +22,61 @@
 2. Registrar en documento separado las desviaciones efectivas que puedan verificarse, sin alterar el protocolo original.
 3. Revisar privacidad, derechos de terceros y posible información de sesión en cualquier captura pública.
 4. Si se publican extractos, vincularlos por `query_id` y documentar cualquier edición o anonimización.
+
+## Actualización — Entrega 02 (12 de octubre de 2026)
+
+Esta sección amplía el alcance a ChatGPT Search, Gemini y
+Perplexity. Las secciones anteriores se conservan como
+registro histórico de la Entrega 01.
+
+### Cobertura
+
+- Ronda 1: 45 observaciones registradas.
+- Cada motor: 12 consultas genéricas y 3 de marca.
+- Rondas 2 y 3: pendientes.
+- El total previsto por el protocolo sigue siendo 135.
+
+### Comparabilidad entre motores
+
+Se utilizaron las mismas 15 consultas, pero no se ha
+verificado la equivalencia de todas las condiciones de
+ejecución entre plataformas.
+
+Las diferencias de interfaz, recuperación de fuentes,
+configuración y personalización pueden afectar las respuestas.
+No se atribuyen causalmente los resultados a un motor.
+
+### Codificación y revisión
+
+Los indicadores de mención, recomendación y cita no son
+mutuamente excluyentes.
+
+Durante la revisión de los datos consolidados se corrigieron
+dos clasificaciones de recomendación correspondientes a
+Perplexity. El dataset público refleja las clasificaciones
+revisadas.
+
+Esta revisión no equivale a una validación independiente
+y exhaustiva de las 45 respuestas.
+
+### Evidencia y trazabilidad
+
+El inventario de trabajo identifica 45 archivos de respuestas
+y 177 capturas PNG. No se ha completado una auditoría
+exhaustiva de correspondencia, integridad y privacidad.
+
+La discrepancia entre las huellas históricas y actuales de
+`observations.csv`, así como la falta de verificación reciente
+de los ZIP históricos, se documentan en `EVIDENCE-MANIFEST.md`.
+
+### Interpretación
+
+Los resultados son descriptivos y se limitan a las consultas
+y ejecuciones registradas.
+
+No constituyen una muestra representativa, ni permiten
+inferir significancia estadística, causalidad, estabilidad
+temporal, ventas o participación de mercado.
+
+La presencia de una cita al dominio oficial no demuestra
+por sí sola que una afirmación esté respaldada.
