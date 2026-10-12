@@ -60,10 +60,28 @@ del enlace comercial «Ver en Coppel».
 
 La revisión está documentada en `citation-audit.md`,
 con evidencia seleccionada en `evidence/`.
-Las capturas restantes no se publican automáticamente.
 
-La revisión exhaustiva de todas las respuestas y capturas
-permanece pendiente. Las rondas 2 y 3 no se han ejecutado.
+## Evidencia visual — Entrega 02.1
+
+Se prepararon 107 capturas correspondientes a la ronda 1:
+
+- Gemini: 59 capturas de 15 consultas.
+- Perplexity: 48 capturas de 15 consultas.
+
+Las imágenes cuentan con un índice que identifica el motor,
+la consulta, la secuencia, la ruta y el hash SHA-256.
+
+- [Consultar evidencia visual e índice](evidence/round-1/README.md)
+- [Índice CSV de las 107 capturas](evidence/round-1/EVIDENCE-INDEX.csv)
+
+El investigador realizó una revisión visual de legibilidad
+y privacidad. Esta revisión no fue independiente.
+
+Las capturas de ChatGPT no forman parte de la Entrega 02.1.
+La revisión exhaustiva de la codificación de todas las
+respuestas permanece pendiente.
+
+Las rondas 2 y 3 no se han ejecutado.
 
 ## Independencia
 
