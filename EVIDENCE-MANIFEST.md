@@ -23,7 +23,7 @@ ChatGPT Search, Gemini y Perplexity: 45 observaciones de las
 - Consultas v1.0: `a93a04151efaeede102eca86c5d1ebd5d5612575d2769b01daef57d4a91203e4`
 - `data/raw/observations.csv` local actual: `2fb7834b82c62acc405e04b9972f20d18a545c134114573569ed66f0b7afa3e7`
 - `data/processed/observations_round1_normalized.csv` local: `bbc97a28091ee8adb5b9c02db119c1124e4c8cb20a4db68379ec5eec04b1df02`
-- `studies/coppel-mx/results-all-engines-r1.csv` público: `389fc3333d8135c366d54e5830445275122e931df33bdd51eab2c41c08552dab`
+- `studies/coppel-mx/results-all-engines-r1.csv` público: `797a55e6b76277775c7e6bf2025bbaf92e41a2343def0c2048e9297644807759`
 
 Las copias locales y del repositorio del protocolo y las
 consultas coinciden byte por byte.
