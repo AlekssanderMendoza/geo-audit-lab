@@ -80,3 +80,84 @@ temporal, ventas o participación de mercado.
 
 La presencia de una cita al dominio oficial no demuestra
 por sí sola que una afirmación esté respaldada.
+
+## Actualización — Corte preliminar R1 + R2 (14 de octubre de 2026)
+
+Esta sección amplía el estado del experimento sin sustituir
+las limitaciones documentadas en las entregas anteriores.
+
+### Cobertura y estado
+
+- R1: 45 observaciones completas.
+- R2: 45 observaciones completas.
+- Total registrado: 90 observaciones.
+- Motores: ChatGPT Search, Gemini y Perplexity.
+- Consultas: 15 por motor y ronda; 12 genéricas y 3 de marca.
+- R3: pendiente, con 45 observaciones previstas.
+- Total previsto al completar el protocolo: 135 observaciones.
+
+Este corte es preliminar y no representa el cierre del estudio.
+
+### Integridad de datos
+
+Los archivos normalizados de R1 y R2 contienen 23 campos
+y fueron reconciliados con el registro maestro actual,
+sin diferencias en los valores comparados después de
+normalizar las representaciones booleanas.
+
+Los archivos públicos de resultados utilizan 11 columnas.
+El CSV de R2 fue generado a partir del archivo normalizado
+y del catálogo de consultas, conservando la estructura de R1.
+
+Se verificaron 45 combinaciones únicas de motor y consulta
+por ronda, sin diferencias entre los cuatro campos de R2
+contrastados con su fuente normalizada.
+
+Estas comprobaciones no sustituyen una auditoría independiente
+de las decisiones de codificación.
+
+### Evidencia local
+
+Se localizaron 90 archivos de respuestas, uno por observación.
+
+La comprobación automática identificó imágenes asociadas
+a las 45 observaciones de R1 y las 45 de R2.
+
+En los directorios locales examinados se contabilizaron
+177 imágenes candidatas de R1 y 151 de R2.
+
+La asociación se verificó mediante rutas, directorios
+y convenciones de nombres. No constituye una revisión
+visual exhaustiva del contenido, legibilidad o privacidad
+de cada captura.
+
+Estas cantidades describen evidencia local y no implican
+que todas las imágenes estén publicadas en GitHub.
+
+### Comparabilidad e interpretación
+
+Las dos rondas utilizan las mismas combinaciones de motor
+y consulta. Sin embargo, no se ha demostrado equivalencia
+completa de las condiciones de ejecución ni independencia
+estadística entre repeticiones.
+
+Las diferencias entre rondas deben describirse como cambios
+observados en este conjunto de ejecuciones, sin atribuirles
+causalidad ni estabilidad temporal.
+
+La tasa de mención espontánea en consultas genéricas
+permanece como indicador principal. Recomendación y cita
+son indicadores complementarios.
+
+No se infiere significancia estadística, representatividad,
+participación de mercado, ventas ni tráfico.
+
+### Pendientes
+
+- Ejecutar y auditar R3.
+- Revisar de forma exhaustiva las decisiones de codificación.
+- Completar la revisión visual y de privacidad antes de
+  publicar nuevas capturas.
+- Preparar índices y manifiestos verificables de R2.
+- Mantener documentadas las discrepancias históricas
+  de integridad y procedencia que aún no estén resueltas.

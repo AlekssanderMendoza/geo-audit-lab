@@ -3,7 +3,7 @@
 **Estudio:** GEO-COPPEL-001
 **Mercado:** México
 **Motores:** ChatGPT Search, Gemini y Perplexity
-**Estado:** ronda 1 documentada; rondas 2 y 3 pendientes.
+**Estado:** rondas 1 y 2 completadas (90 observaciones); ronda 3 pendiente.
 
 Investigación independiente y exploratoria sobre la visibilidad
 de Coppel en respuestas generativas.
@@ -81,7 +81,61 @@ Las capturas de ChatGPT no forman parte de la Entrega 02.1.
 La revisión exhaustiva de la codificación de todas las
 respuestas permanece pendiente.
 
-Las rondas 2 y 3 no se han ejecutado.
+La ronda 2 se completó posteriormente. La ronda 3 permanece pendiente.
+
+## Corte preliminar — R1 + R2 (14 de octubre de 2026)
+
+Se completaron dos rondas con las mismas 15 consultas
+en ChatGPT Search, Gemini y Perplexity.
+
+| Ronda | Observaciones | Estado |
+|---|---:|---|
+| R1 | 45 | Completa |
+| R2 | 45 | Completa |
+| R3 | 45 previstas | Pendiente |
+| **Total registrado** | **90** | **Corte preliminar** |
+
+El protocolo completo contempla 135 observaciones.
+
+### Datos de la segunda ronda
+
+- [Resultados consolidados de R2](results-all-engines-r2.csv)
+- [Resultados consolidados de R1](results-all-engines-r1.csv)
+- [Limitaciones y desviaciones actualizadas](limitations-and-deviations.md)
+
+Ambos archivos de resultados contienen 45 registros,
+15 consultas por motor y 11 columnas equivalentes.
+
+Las 90 observaciones fueron reconciliadas con el
+registro maestro actual del laboratorio.
+
+### Alcance de la comparación
+
+Este corte permite describir los cambios observados
+entre dos ejecuciones de las mismas consultas.
+
+La tasa de mención espontánea en consultas genéricas
+continúa siendo el indicador principal.
+
+Las diferencias entre rondas no demuestran estabilidad
+temporal, significancia estadística ni causalidad.
+
+La revisión independiente y exhaustiva de la codificación
+permanece pendiente.
+
+### Evidencia y próximos pasos
+
+En el laboratorio local se localizaron 90 archivos de
+respuesta y asociaciones automáticas con capturas para
+las 90 observaciones.
+
+La evidencia visual de R2 requiere revisión de privacidad,
+índice verificable y preparación para publicación.
+
+La tercera ronda todavía no se ha ejecutado.
+
+La Entrega 03 corresponde a un análisis preliminar de
+R1 + R2 y no al cierre definitivo del experimento.
 
 ## Independencia
 
