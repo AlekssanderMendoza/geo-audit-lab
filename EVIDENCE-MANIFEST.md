@@ -54,3 +54,81 @@ No incluye respuestas completas, capturas ni metadatos
 detallados de sesión.
 
 Las rondas 2 y 3 permanecen pendientes.
+
+---
+
+## Actualización — Corte preliminar R1 + R2 (14 de octubre de 2026)
+
+Esta sección actualiza el estado público del laboratorio sin sustituir
+las verificaciones ni las declaraciones históricas anteriores.
+
+### Observaciones
+
+| Ronda | Observaciones | Estado |
+|---|---:|---|
+| R1 | 45 | Completada |
+| R2 | 45 | Completada |
+| R3 | 45 previstas | Pendiente |
+| **Total registrado** | **90 de 135 previstas** | **Corte preliminar** |
+
+Los resultados públicos consolidados están disponibles en:
+
+- `studies/coppel-mx/results-all-engines-r1.csv`
+- `studies/coppel-mx/results-all-engines-r2.csv`
+
+Cada archivo contiene 45 observaciones y 11 columnas.
+
+### Evidencia visual publicada
+
+| Ronda | ChatGPT Search | Gemini | Perplexity | Total |
+|---|---:|---:|---:|---:|
+| R1 | 0 | 59 | 48 | 107 |
+| R2 | 54 | 51 | 46 | 151 |
+| **Total** | **54** | **110** | **94** | **258** |
+
+Las capturas publicadas están organizadas en:
+
+- `studies/coppel-mx/evidence/round-1/`
+- `studies/coppel-mx/evidence/round-2/`
+
+Cada ronda dispone de un archivo `EVIDENCE-INDEX.csv` y un README
+que documentan el conjunto publicado.
+
+Las 70 capturas de ChatGPT Search R1 identificadas en el laboratorio
+local permanecen pendientes de incorporación al repositorio público.
+
+Existen además cuatro capturas seleccionadas directamente en
+`studies/coppel-mx/evidence/`. Su clasificación por ronda y
+procedencia específica requiere revisión documental.
+
+### Verificaciones y límites
+
+Las 151 capturas publicadas de R2 fueron contrastadas mediante
+SHA-256 con sus correspondientes archivos originales locales
+durante la preparación de la publicación.
+
+Los índices por ronda permiten consultar las huellas registradas
+para las capturas publicadas. La existencia de un hash no demuestra
+por sí sola la autenticidad de la respuesta, la corrección de la
+codificación ni la ausencia de información privada.
+
+La revisión visual realizada no constituye una auditoría
+independiente y exhaustiva.
+
+### Discrepancias históricas
+
+La discrepancia previamente documentada entre las huellas SHA-256
+de `observations.csv` continúa sin explicación confirmada.
+
+Las huellas históricas de `responses.zip` y `screenshots.zip`
+se conservan en las secciones anteriores; su verificación
+posterior no quedó acreditada en esa revisión.
+
+Ninguno de esos registros históricos se sustituye por los
+índices de evidencias publicados posteriormente.
+
+### Estado editorial
+
+Este corte corresponde a R1 + R2 y no al cierre del experimento.
+La comparación descriptiva prevista para la Entrega 03 y la
+tercera ronda permanecen pendientes.

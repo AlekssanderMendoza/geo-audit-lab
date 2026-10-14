@@ -1,41 +1,56 @@
 # GEO Audit Lab
 
-Investigación independiente y exploratoria sobre la visibilidad
-de marcas en respuestas de motores generativos.
+Laboratorio independiente de investigación exploratoria sobre la visibilidad de marcas en respuestas de motores de búsqueda y generación con inteligencia artificial.
 
-## Estudios
+El proyecto documenta consultas, respuestas, indicadores y evidencias para analizar cómo aparecen las marcas en distintos motores generativos. Su prioridad es la transparencia metodológica y la reproducibilidad de las observaciones.
 
-### Coppel México — GEO-COPPEL-001
+## Estudio activo: Coppel México
 
-**Estado:** primera ronda documentada (8–9 de octubre de 2026).
+**Identificador:** GEO-COPPEL-001  
+**Mercado:** México  
+**Motores:** ChatGPT Search, Gemini y Perplexity  
+**Corte documentado:** 14 de octubre de 2026  
+**Estado:** R1 y R2 completadas; R3 pendiente.
 
-- 3 motores: ChatGPT Search, Gemini y Perplexity.
-- 15 consultas por motor: 12 genéricas y 3 de marca.
-- 45 observaciones registradas de 135 previstas.
-- Rondas 2 y 3 pendientes.
+| Ronda | Observaciones | Estado |
+|---|---:|---|
+| R1 | 45 | Completada |
+| R2 | 45 | Completada |
+| R3 | 45 previstas | Pendiente |
+| **Total registrado** | **90 de 135 previstas** | **Corte preliminar** |
 
-**Publicaciones:**
-- Entrega 01: resultados de ChatGPT Search.
-- Entrega 02: comparación descriptiva de los tres motores.
+Se utilizan las mismas 15 consultas por motor y ronda: 12 genéricas y 3 explícitas de marca.
 
-**Documentación y datos:**
-- [Estudio Coppel México](studies/coppel-mx/README.md)
-- [Dataset consolidado — ronda 1](studies/coppel-mx/results-all-engines-r1.csv)
-- [Resultados y limitaciones](studies/coppel-mx/results-all-engines-r1.md)
-- [Auditoría focalizada de citas](studies/coppel-mx/citation-audit.md)
+El indicador principal es la tasa de mención espontánea de Coppel en consultas genéricas. La recomendación y la citación al dominio oficial son indicadores secundarios.
 
-## Alcance y transparencia
+## Explorar el estudio
 
-Los resultados se limitan a las consultas y ejecuciones
-documentadas. No constituyen una muestra representativa,
-ni permiten inferir causalidad o estabilidad temporal.
+| Recurso | Contenido |
+|---|---|
+| [Estudio Coppel México](studies/coppel-mx/README.md) | Índice técnico y estado de la investigación |
+| [Protocolo v1.0](studies/coppel-mx/protocol-v1.0.md) | Diseño metodológico original |
+| [Consultas v1.0](studies/coppel-mx/queries-v1.0.csv) | Las 15 preguntas del experimento |
+| [Diccionario de codificación](studies/coppel-mx/codebook.md) | Definiciones y criterios de indicadores |
+| [Resultados R1](studies/coppel-mx/results-all-engines-r1.csv) | 45 observaciones consolidadas |
+| [Resultados R2](studies/coppel-mx/results-all-engines-r2.csv) | 45 observaciones consolidadas |
+| [Evidencias visuales R1](studies/coppel-mx/evidence/round-1/README.md) | Capturas de Gemini y Perplexity |
+| [Evidencias visuales R2](studies/coppel-mx/evidence/round-2/README.md) | Capturas de los tres motores |
+| [Limitaciones y desviaciones](studies/coppel-mx/limitations-and-deviations.md) | Restricciones y decisiones documentadas |
+| [Manifiesto de evidencias](EVIDENCE-MANIFEST.md) | Procedencia e historial de verificaciones |
+| [Historial de cambios](CHANGELOG.md) | Evolución del paquete público |
 
-Los indicadores de mención, recomendación y citación
-no equivalen a ventas, tráfico o participación de mercado.
+## Alcance e interpretación
 
-El protocolo original permanece congelado en su versión 1.0.
-Las respuestas y capturas completas no se publican
-automáticamente por consideraciones de privacidad y revisión.
+Los resultados describen exclusivamente las consultas y ejecuciones documentadas. No constituyen una muestra representativa del comportamiento general de los motores generativos.
 
-Este proyecto no cuenta con aval de Coppel ni de los
-proveedores de motores generativos.
+Las diferencias entre rondas no demuestran significancia estadística, causalidad ni estabilidad temporal.
+
+Los indicadores de mención, recomendación y citación no equivalen a ventas, tráfico, participación de mercado ni preferencia de los consumidores.
+
+El protocolo original permanece congelado en su versión 1.0. Las respuestas completas y algunas evidencias visuales no forman parte del paquete público; las capturas publicadas cuentan con índices de referencia e integridad.
+
+La revisión independiente y exhaustiva de la codificación permanece pendiente.
+
+## Independencia
+
+GEO Audit Lab es una investigación independiente. No cuenta con aval de Coppel ni de los proveedores de motores generativos.

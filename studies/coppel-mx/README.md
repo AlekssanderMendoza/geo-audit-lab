@@ -1,17 +1,43 @@
 # Coppel México — GEO Audit Lab
 
-**Estudio:** GEO-COPPEL-001
-**Mercado:** México
-**Motores:** ChatGPT Search, Gemini y Perplexity
-**Estado:** rondas 1 y 2 completadas (90 observaciones); ronda 3 pendiente.
+**Estudio:** GEO-COPPEL-001  
+**Mercado:** México  
+**Motores:** ChatGPT Search, Gemini y Perplexity  
+**Corte:** 14 de octubre de 2026  
+**Estado:** R1 y R2 completadas; R3 pendiente.
 
-Investigación independiente y exploratoria sobre la visibilidad
-de Coppel en respuestas generativas.
+Investigación independiente y exploratoria sobre la aparición de Coppel México en respuestas de motores generativos.
 
-## Resultados de la ronda 1
+## Estado del experimento
 
-Se registraron 45 observaciones: 15 consultas por motor,
-con 12 consultas genéricas y 3 explícitas de marca por motor.
+| Ronda | Observaciones | Estado |
+|---|---:|---|
+| R1 | 45 | Completada |
+| R2 | 45 | Completada |
+| R3 | 45 previstas | Pendiente |
+| **Total** | **90 de 135 previstas** | **Corte preliminar** |
+
+Cada ronda comprende 15 consultas por motor: 12 genéricas y 3 explícitas de marca.
+
+El indicador principal es la tasa de mención espontánea de Coppel en consultas genéricas. La recomendación y la citación al dominio oficial son indicadores secundarios.
+
+## Navegación del estudio
+
+| Área | Recursos |
+|---|---|
+| Metodología | [Protocolo v1.0](protocol-v1.0.md) · [Consultas](queries-v1.0.csv) · [Codebook](codebook.md) |
+| Resultados R1 | [Dataset](results-all-engines-r1.csv) · [Análisis descriptivo](results-all-engines-r1.md) · [ChatGPT histórico — Entrega 01](results-chatgpt-r1.csv) |
+| Resultados R2 | [Dataset](results-all-engines-r2.csv) |
+| Evidencias R1 | [Documentación e índice](evidence/round-1/README.md) · [Índice CSV](evidence/round-1/EVIDENCE-INDEX.csv) |
+| Evidencias R2 | [Documentación e índice](evidence/round-2/README.md) · [Índice CSV](evidence/round-2/EVIDENCE-INDEX.csv) |
+| Auditoría | [Citas](citation-audit.md) · [Limitaciones y desviaciones](limitations-and-deviations.md) |
+| Trazabilidad | [Manifiesto de evidencias](../../EVIDENCE-MANIFEST.md) · [Historial de cambios](../../CHANGELOG.md) |
+
+## Resultados históricos — Ronda 1
+
+Se registraron 45 observaciones, distribuidas entre los tres motores.
+
+Los siguientes indicadores corresponden exclusivamente a las 12 consultas genéricas por motor.
 
 | Motor | Mención espontánea | Recomendación | Cita oficial |
 |---|---:|---:|---:|
@@ -19,125 +45,81 @@ con 12 consultas genéricas y 3 explícitas de marca por motor.
 | Gemini | 8/12 (66.7 %) | 8/12 (66.7 %) | 5/12 (41.7 %) |
 | Perplexity | 8/12 (66.7 %) | 8/12 (66.7 %) | 7/12 (58.3 %) |
 
-Los porcentajes corresponden exclusivamente a consultas genéricas.
-
-En las tres consultas explícitas de marca, cada motor registró
-3 menciones, 0 recomendaciones y 3 citas.
+En las tres consultas explícitas de marca, cada motor registró tres menciones, cero recomendaciones y tres citas oficiales.
 
 Los indicadores no son mutuamente excluyentes.
 
-## Datos y metodología
+Estos resultados describen exclusivamente R1. No deben interpretarse como resultados combinados de R1 y R2.
 
-- [Dataset consolidado de la ronda 1](results-all-engines-r1.csv)
-- [Resultados, procedencia y limitaciones](results-all-engines-r1.md)
-- [Resultados históricos de ChatGPT — Entrega 01](results-chatgpt-r1.csv)
-- [Protocolo original v1.0](protocol-v1.0.md)
-- [Consultas originales](queries-v1.0.csv)
-- [Diccionario de codificación](codebook.md)
-- [Limitaciones y desviaciones](limitations-and-deviations.md)
-- [Auditoría focalizada de citas](citation-audit.md)
+## Corte preliminar — R1 + R2
 
-## Interpretación
+Las dos primeras rondas comprenden 90 observaciones de las mismas 15 consultas en los tres motores.
 
-Los resultados describen las respuestas registradas durante
-la primera ronda. No constituyen una muestra representativa
-del comportamiento general de los motores en México.
+Los datasets públicos consolidados contienen 45 registros y 11 columnas por ronda.
 
-Las diferencias observadas no demuestran significancia
-estadística, causalidad ni estabilidad temporal.
+Las 90 observaciones fueron reconciliadas con el registro maestro del laboratorio. Esta comprobación interna no equivale a una auditoría independiente de la codificación.
 
-La presencia de una cita al dominio oficial no garantiza
-por sí sola que una afirmación esté respaldada.
+- [Consultar resultados consolidados de R1](results-all-engines-r1.csv)
+- [Consultar resultados consolidados de R2](results-all-engines-r2.csv)
+- [Consultar limitaciones y desviaciones](limitations-and-deviations.md)
 
-Los indicadores no equivalen a participación de mercado,
-ventas, tráfico o preferencia de consumidores.
+La comparación entre rondas permite describir diferencias observadas entre ejecuciones. No demuestra estabilidad temporal, significancia estadística ni causalidad.
 
-## Auditoría de citas de la Entrega 01
+El análisis comparativo completo de R1 y R2 queda pendiente de publicación como Entrega 03.
 
-La revisión focalizada confirmó la clasificación
-`CRED-02: cited=true`, distinguiendo una fuente visible
-del enlace comercial «Ver en Coppel».
+## Evidencias visuales
 
-La revisión está documentada en `citation-audit.md`,
-con evidencia seleccionada en `evidence/`.
+### Ronda 1
 
-## Evidencia visual — Entrega 02.1
+Se encuentran publicadas 107 capturas correspondientes a:
 
-Se prepararon 107 capturas correspondientes a la ronda 1:
+- Gemini: 59 imágenes.
+- Perplexity: 48 imágenes.
 
-- Gemini: 59 capturas de 15 consultas.
-- Perplexity: 48 capturas de 15 consultas.
+Las 70 capturas de ChatGPT Search identificadas en el laboratorio local todavía no forman parte de la evidencia publicada de R1.
 
-Las imágenes cuentan con un índice que identifica el motor,
-la consulta, la secuencia, la ruta y el hash SHA-256.
+[Consultar evidencias e índice de R1](evidence/round-1/README.md).
 
-- [Consultar evidencia visual e índice](evidence/round-1/README.md)
-- [Índice CSV de las 107 capturas](evidence/round-1/EVIDENCE-INDEX.csv)
+### Ronda 2
 
-El investigador realizó una revisión visual de legibilidad
-y privacidad. Esta revisión no fue independiente.
+Se encuentran publicadas 151 capturas correspondientes a:
 
-Las capturas de ChatGPT no forman parte de la Entrega 02.1.
-La revisión exhaustiva de la codificación de todas las
-respuestas permanece pendiente.
+- ChatGPT Search: 54 imágenes.
+- Gemini: 51 imágenes.
+- Perplexity: 46 imágenes.
 
-La ronda 2 se completó posteriormente. La ronda 3 permanece pendiente.
+Las capturas de R2 cuentan con un índice CSV de archivos y huellas SHA-256.
 
-## Corte preliminar — R1 + R2 (14 de octubre de 2026)
+[Consultar evidencias e índice de R2](evidence/round-2/README.md).
 
-Se completaron dos rondas con las mismas 15 consultas
-en ChatGPT Search, Gemini y Perplexity.
+Las revisiones visuales efectuadas por el investigador no equivalen a una auditoría independiente y exhaustiva de privacidad, integridad o correspondencia entre respuestas y capturas.
 
-| Ronda | Observaciones | Estado |
-|---|---:|---|
-| R1 | 45 | Completa |
-| R2 | 45 | Completa |
-| R3 | 45 previstas | Pendiente |
-| **Total registrado** | **90** | **Corte preliminar** |
+## Auditoría de citas
 
-El protocolo completo contempla 135 observaciones.
+La auditoría focalizada de la Entrega 01 documenta la decisión de conservar `CRED-02: cited=true`, diferenciando una fuente visible del enlace comercial «Ver en Coppel».
 
-### Datos de la segunda ronda
+La decisión y la evidencia seleccionada se conservan en [citation-audit.md](citation-audit.md).
 
-- [Resultados consolidados de R2](results-all-engines-r2.csv)
-- [Resultados consolidados de R1](results-all-engines-r1.csv)
-- [Limitaciones y desviaciones actualizadas](limitations-and-deviations.md)
+## Limitaciones y reproducibilidad
 
-Ambos archivos de resultados contienen 45 registros,
-15 consultas por motor y 11 columnas equivalentes.
+El protocolo original permanece congelado en su versión 1.0.
 
-Las 90 observaciones fueron reconciliadas con el
-registro maestro actual del laboratorio.
+El estudio utiliza un conjunto acotado de consultas y ejecuciones documentadas. No constituye una muestra representativa del comportamiento general de los motores generativos.
 
-### Alcance de la comparación
+La presencia de una cita al dominio oficial no garantiza que todas las afirmaciones de una respuesta estén respaldadas por esa fuente.
 
-Este corte permite describir los cambios observados
-entre dos ejecuciones de las mismas consultas.
+Los indicadores de mención, recomendación y citación no equivalen a ventas, tráfico, participación de mercado ni preferencia de consumidores.
 
-La tasa de mención espontánea en consultas genéricas
-continúa siendo el indicador principal.
+La revisión independiente y exhaustiva de la codificación de las respuestas permanece pendiente.
 
-Las diferencias entre rondas no demuestran estabilidad
-temporal, significancia estadística ni causalidad.
+Las discrepancias históricas de integridad y las limitaciones de procedencia se documentan en el [manifiesto de evidencias](../../EVIDENCE-MANIFEST.md) y en [limitaciones y desviaciones](limitations-and-deviations.md).
 
-La revisión independiente y exhaustiva de la codificación
-permanece pendiente.
+## Próximos pasos
 
-### Evidencia y próximos pasos
-
-En el laboratorio local se localizaron 90 archivos de
-respuesta y asociaciones automáticas con capturas para
-las 90 observaciones.
-
-La evidencia visual de R2 requiere revisión de privacidad,
-índice verificable y preparación para publicación.
-
-La tercera ronda todavía no se ha ejecutado.
-
-La Entrega 03 corresponde a un análisis preliminar de
-R1 + R2 y no al cierre definitivo del experimento.
+- Completar la publicación y documentación de las capturas pendientes de ChatGPT Search R1.
+- Elaborar la comparación descriptiva R1 frente a R2 para la Entrega 03.
+- Ejecutar y documentar R3 conforme al protocolo.
 
 ## Independencia
 
-Este proyecto no cuenta con aval de Coppel ni de los
-proveedores de motores generativos.
+Este estudio no cuenta con aval de Coppel ni de los proveedores de motores generativos.
