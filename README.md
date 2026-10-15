@@ -28,7 +28,7 @@ El indicador principal es la tasa de mención espontánea de Coppel en consultas
 | Recurso | Contenido |
 |---|---|
 | [Estudio Coppel México](studies/coppel-mx/README.md) | Índice técnico y estado de la investigación |
-| [Dashboard interactivo](dashboard/README.md) | Exploración de R1 y R2, con filtros por motor, ronda y tipo de consulta |
+| [Dashboard público](https://geo-audit-lab-coppel.streamlit.app/) | Aplicación interactiva de R1 y R2; [código y documentación](dashboard/README.md) |
 | [Protocolo v1.0](studies/coppel-mx/protocol-v1.0.md) | Diseño metodológico original |
 | [Consultas v1.0](studies/coppel-mx/queries-v1.0.csv) | Las 15 preguntas del experimento |
 | [Diccionario de codificación](studies/coppel-mx/codebook.md) | Definiciones y criterios de indicadores |
