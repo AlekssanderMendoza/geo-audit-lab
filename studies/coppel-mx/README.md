@@ -71,12 +71,18 @@ El análisis comparativo completo de R1 y R2 queda pendiente de publicación com
 
 ### Ronda 1
 
-Se encuentran publicadas 107 capturas correspondientes a:
+El inventario local de R1 comprende 177 capturas:
 
+- ChatGPT Search: 70 imágenes.
 - Gemini: 59 imágenes.
 - Perplexity: 48 imágenes.
 
-Las 70 capturas de ChatGPT Search identificadas en el laboratorio local todavía no forman parte de la evidencia publicada de R1.
+Las 107 capturas de Gemini y Perplexity ya están publicadas.
+Las 70 capturas de ChatGPT Search se incorporaron e indexaron
+en el repositorio local, con verificación SHA-256 satisfactoria.
+
+Las 70 capturas de ChatGPT Search R1 fueron revisadas y aprobadas visualmente por el investigador. Esta revisión no constituye una auditoría independiente.
+Por tanto, estas 70 capturas aún no se consideran publicadas en GitHub.
 
 [Consultar evidencias e índice de R1](evidence/round-1/README.md).
 
@@ -116,7 +122,7 @@ Las discrepancias históricas de integridad y las limitaciones de procedencia se
 
 ## Próximos pasos
 
-- Completar la publicación y documentación de las capturas pendientes de ChatGPT Search R1.
+- Publicar en GitHub las 70 capturas de ChatGPT Search R1, ya incorporadas, indexadas y revisadas visualmente en el repositorio local.
 - Elaborar la comparación descriptiva R1 frente a R2 para la Entrega 03.
 - Ejecutar y documentar R3 conforme al protocolo.
 

@@ -33,7 +33,7 @@ El indicador principal es la tasa de mención espontánea de Coppel en consultas
 | [Diccionario de codificación](studies/coppel-mx/codebook.md) | Definiciones y criterios de indicadores |
 | [Resultados R1](studies/coppel-mx/results-all-engines-r1.csv) | 45 observaciones consolidadas |
 | [Resultados R2](studies/coppel-mx/results-all-engines-r2.csv) | 45 observaciones consolidadas |
-| [Evidencias visuales R1](studies/coppel-mx/evidence/round-1/README.md) | Capturas de Gemini y Perplexity |
+| [Evidencias visuales R1](studies/coppel-mx/evidence/round-1/README.md) | 177 capturas en el inventario local; 70 de ChatGPT Search revisadas, con publicación en GitHub pendiente |
 | [Evidencias visuales R2](studies/coppel-mx/evidence/round-2/README.md) | Capturas de los tres motores |
 | [Limitaciones y desviaciones](studies/coppel-mx/limitations-and-deviations.md) | Restricciones y decisiones documentadas |
 | [Manifiesto de evidencias](EVIDENCE-MANIFEST.md) | Procedencia e historial de verificaciones |

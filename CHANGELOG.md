@@ -25,9 +25,11 @@
 
 ### Evidencia visual de R1 — Entrega 02.1
 
-- Se publicaron 107 capturas: 59 de Gemini y 48 de Perplexity.
+- Se publicaron inicialmente 107 capturas: 59 de Gemini y 48 de Perplexity.
 - Se incorporaron un README y un índice CSV con huellas SHA-256.
-- Las 70 capturas de ChatGPT Search R1 permanecen pendientes de incorporación.
+- En ese corte, las 70 capturas de ChatGPT Search R1 permanecían pendientes de incorporación.
+- Actualización del 14 de octubre: las 70 capturas se incorporaron e indexaron localmente, se verificaron mediante SHA-256 y fueron aprobadas visualmente por el investigador.
+- La publicación de esas 70 capturas en GitHub continúa pendiente de confirmación.
 
 ### Corte preliminar R1 + R2
 
@@ -51,3 +53,18 @@
 - Se actualizó el manifiesto general sin alterar sus hashes ni registros históricos.
 - Se conservaron las limitaciones metodológicas y las discrepancias de integridad pendientes.
 - No se modificaron el protocolo v1.0, las consultas originales ni los datasets.
+
+### Preparación local de evidencias ChatGPT Search R1
+
+- Se incorporaron localmente 70 capturas de ChatGPT Search correspondientes a R1.
+- El inventario local de R1 pasó de 107 a 177 capturas: 70 de ChatGPT Search, 59 de Gemini y 48 de Perplexity.
+- Se amplió `studies/coppel-mx/evidence/round-1/EVIDENCE-INDEX.csv` a 177 registros.
+- Se verificaron la existencia, los nombres, las huellas SHA-256 y la unicidad de las secuencias del índice R1, sin errores detectados.
+- Las 70 copias de ChatGPT Search conservaron su contenido original, comprobado mediante SHA-256.
+- Las cuatro capturas de `DISC-01` recibieron secuencias basadas en las marcas temporales de sus nombres originales; estas no garantizan el orden de lectura de la respuesta.
+- Se confirmó visualmente la correspondencia de las cuatro capturas de `DISC-01`.
+- Al preparar esta incorporación local, permanecían pendientes de revisión visual las otras 66 capturas de ChatGPT Search R1.
+- Posteriormente, el investigador revisó y aprobó visualmente esas 66 capturas, completando la revisión de las 70 capturas de ChatGPT Search R1.
+- La revisión visual no constituye una auditoría independiente; la publicación en GitHub continúa pendiente.
+- En el corte publicado anterior, el repositorio contenía 258 capturas. El inventario local preparado de R1 y R2 suma 328; la publicación de las 70 capturas adicionales de ChatGPT Search R1 sigue pendiente de confirmación.
+- Se actualizaron las referencias documentales sin modificar el protocolo, las consultas ni los datasets.
