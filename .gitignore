@@ -1,3 +1,14 @@
 
 # macOS metadata
 .DS_Store
+
+# Python virtual environment
+.venv/
+
+# Local backup files
+*.bak
+
+# Python cache and dashboard backups
+__pycache__/
+*.py[cod]
+dashboard/*-backup.py
