@@ -342,3 +342,180 @@ st.caption(
     "Los denominadores corresponden a cada motor y ronda seleccionados. "
     "Los tres indicadores no deben sumarse entre sí."
 )
+
+
+# GEO_AUDIT_EXECUTIVE_R1_R2_V1
+st.markdown("---")
+st.markdown("### ¿Qué cambió entre rondas?")
+
+st.caption(
+    "Comparación descriptiva de las mismas consultas por motor. "
+    "Los cambios observados no demuestran una tendencia temporal."
+)
+
+if not {1, 2}.issubset(set(filtered_data["round"].unique())):
+    st.warning("Selecciona R1 y R2 para visualizar las transiciones.")
+else:
+    selected_metric = st.selectbox(
+        "Indicador para comparar",
+        options=list(METRICS),
+        format_func=lambda value: METRICS[value],
+        key="executive_metric",
+    )
+
+    selected_rows = filtered_data[
+        ["engine", "query_id", "round", selected_metric]
+    ].copy()
+
+    pairs = selected_rows.pivot(
+        index=["engine", "query_id"],
+        columns="round",
+        values=selected_metric,
+    ).dropna(subset=[1, 2])
+
+    if pairs.empty:
+        st.warning("No existen pares completos para esta selección.")
+    else:
+        pairs["transition"] = (
+            pairs[1].astype(int).astype(str)
+            + "→"
+            + pairs[2].astype(int).astype(str)
+        )
+
+        counts = pairs["transition"].value_counts()
+
+        maintained = int(counts.get("1→1", 0))
+        appeared = int(counts.get("0→1", 0))
+        disappeared = int(counts.get("1→0", 0))
+        absent = int(counts.get("0→0", 0))
+
+        col1, col2, col3, col4 = st.columns(4)
+
+        col1.metric(
+            "Presente en ambas",
+            maintained,
+            help="Presencia del indicador en R1 y R2.",
+        )
+        col2.metric(
+            "Apareció en R2",
+            appeared,
+            help="Ausencia en R1 y presencia en R2.",
+        )
+        col3.metric(
+            "Desapareció en R2",
+            disappeared,
+            help="Presencia en R1 y ausencia en R2.",
+        )
+        col4.metric(
+            "Ausente en ambas",
+            absent,
+            help="Ausencia del indicador en R1 y R2.",
+        )
+
+        st.caption(
+            f"{len(pairs)} comparaciones emparejadas. "
+            "Las cuatro categorías son mutuamente excluyentes "
+            "y suman el total de pares."
+        )
+
+        label = METRICS[selected_metric].lower()
+
+        st.markdown(
+            f"**Lectura rápida:** En {maintained} comparaciones, "
+            f"la {label} de Coppel estuvo presente en ambas rondas; "
+            f"apareció en {appeared} y desapareció en {disappeared}."
+        )
+
+        transition_labels_chart = {
+            "1→1": "Presente en ambas",
+            "0→1": "Apareció en R2",
+            "1→0": "Desapareció en R2",
+            "0→0": "Ausente en ambas",
+        }
+
+        transition_colors = {
+            "Presente en ambas": "#176B5B",
+            "Apareció en R2": "#34D399",
+            "Desapareció en R2": "#E69F00",
+            "Ausente en ambas": "#AAB4BE",
+        }
+
+        transition_rows = (
+            pairs.reset_index()
+            .groupby(["engine", "transition"])
+            .size()
+            .reset_index(name="Consultas")
+        )
+
+        transition_rows["Estado"] = (
+            transition_rows["transition"].map(transition_labels_chart)
+        )
+
+        transition_fig = px.bar(
+            transition_rows,
+            x="Consultas",
+            y="engine",
+            color="Estado",
+            orientation="h",
+            barmode="stack",
+            category_orders={
+                "engine": ["ChatGPT", "Gemini", "Perplexity"],
+                "Estado": list(transition_labels_chart.values()),
+            },
+            color_discrete_map=transition_colors,
+            text="Consultas",
+            title=f"Transiciones de {METRICS[selected_metric].lower()} por motor",
+        )
+
+        transition_fig.update_traces(
+            textposition="inside",
+            hovertemplate=(
+                "%{y}<br>%{fullData.name}: %{x} consultas"
+                "<extra></extra>"
+            ),
+        )
+
+        transition_fig.update_layout(
+            xaxis_title="Consultas emparejadas",
+            yaxis_title="",
+            legend_title_text="Resultado entre R1 y R2",
+            plot_bgcolor="rgba(0,0,0,0)",
+            paper_bgcolor="rgba(0,0,0,0)",
+        )
+
+        st.plotly_chart(transition_fig, width="stretch")
+
+        with st.expander("Ver detalle técnico de las transiciones"):
+            transition_labels = {
+                "0→0": "Ausente en ambas",
+                "0→1": "Aparece en R2",
+                "1→0": "Desaparece en R2",
+                "1→1": "Presente en ambas",
+            }
+
+            matrix = (
+                pairs.reset_index()
+                .groupby(["engine", "transition"])
+                .size()
+                .unstack(fill_value=0)
+                .reindex(
+                    columns=list(transition_labels),
+                    fill_value=0,
+                )
+                .rename(columns=transition_labels)
+            )
+
+            st.dataframe(matrix, width="stretch")
+
+            st.caption(
+                "Cada par corresponde a la misma consulta y motor "
+                "en R1 y R2. Los indicadores son binarios."
+            )
+
+        st.info(
+            "Resultados exploratorios, limitados a las consultas "
+            "y ejecuciones registradas. No se infiere causalidad, "
+            "significancia estadística ni estabilidad temporal. "
+            "La mención espontánea corresponde exclusivamente "
+            "a consultas genéricas."
+        )
